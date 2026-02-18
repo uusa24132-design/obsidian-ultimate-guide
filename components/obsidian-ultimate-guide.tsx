@@ -165,10 +165,10 @@ export default function ObsidianUltimateGuide() {
     ]
 
     const plugins = [
-        { icon: <Zap className="h-6 w-6" />, title: '日记 Daily Notes', description: '每日自动创建笔记，记录生活点滴' },
-        { icon: <Database className="h-6 w-6" />, title: 'Dataview', description: '像数据库一样查询笔记，生成动态列表' },
-        { icon: <Palette className="h-6 w-6" />, title: 'Excalidraw', description: '手绘风格画图，直观表达想法' },
-        { icon: <Calendar className="h-6 w-6" />, title: 'Calendar', description: '日历视图配合日记，回顾时间线' },
+        { icon: <Zap className="h-6 w-6" />, title: '日记 Daily Notes', description: '每日自动创建笔记，记录生活点滴', color: 'amber' },
+        { icon: <Database className="h-6 w-6" />, title: 'Dataview', description: '像数据库一样查询笔记，生成动态列表', color: 'blue' },
+        { icon: <Palette className="h-6 w-6" />, title: 'Excalidraw', description: '手绘风格画图，直观表达想法', color: 'emerald' },
+        { icon: <Calendar className="h-6 w-6" />, title: 'Calendar', description: '日历视图配合日记，回顾时间线', color: 'violet' },
     ]
 
     const themes = [
@@ -234,10 +234,10 @@ export default function ObsidianUltimateGuide() {
                         {/* Vault Card */}
                         <Card className="bg-[#1E1E2E] border-purple-500/20 backdrop-blur-lg hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-600/20 group">
                             <CardHeader>
-                                <div className="w-14 h-14 rounded-2xl bg-purple-600/20 flex items-center justify-center mb-4 group-hover:bg-purple-600/30 transition-colors">
-                                    <Folder className="h-7 w-7 text-purple-400" />
+                                <div className="w-14 h-14 rounded-2xl bg-amber-500/20 flex items-center justify-center mb-4 group-hover:bg-amber-500/30 transition-colors">
+                                    <Folder className="h-7 w-7 text-amber-400" />
                                 </div>
-                                <CardTitle className="text-2xl text-purple-300">📂 仓库 (Vault)</CardTitle>
+                                <CardTitle className="text-2xl text-amber-300">📂 仓库 (Vault)</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-300 leading-relaxed">
@@ -249,10 +249,10 @@ export default function ObsidianUltimateGuide() {
                         {/* Markdown Card */}
                         <Card className="bg-[#1E1E2E] border-purple-500/20 backdrop-blur-lg hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-600/20 group">
                             <CardHeader>
-                                <div className="w-14 h-14 rounded-2xl bg-purple-600/20 flex items-center justify-center mb-4 group-hover:bg-purple-600/30 transition-colors">
-                                    <Code2 className="h-7 w-7 text-purple-400" />
+                                <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
+                                    <Code2 className="h-7 w-7 text-blue-400" />
                                 </div>
-                                <CardTitle className="text-2xl text-purple-300">📝 Markdown 语法</CardTitle>
+                                <CardTitle className="text-2xl text-blue-300">📝 Markdown 语法</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-300 leading-relaxed mb-3">
@@ -270,10 +270,10 @@ export default function ObsidianUltimateGuide() {
                         {/* Bidirectional Links Card */}
                         <Card className="bg-[#1E1E2E] border-purple-500/20 backdrop-blur-lg hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-600/20 group">
                             <CardHeader>
-                                <div className="w-14 h-14 rounded-2xl bg-purple-600/20 flex items-center justify-center mb-4 group-hover:bg-purple-600/30 transition-colors">
-                                    <Link2 className="h-7 w-7 text-purple-400" />
+                                <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-4 group-hover:bg-emerald-500/30 transition-colors">
+                                    <Link2 className="h-7 w-7 text-emerald-400" />
                                 </div>
-                                <CardTitle className="text-2xl text-purple-300">🔗 双向链接</CardTitle>
+                                <CardTitle className="text-2xl text-emerald-300">🔗 双向链接</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-300 leading-relaxed">
@@ -305,10 +305,10 @@ export default function ObsidianUltimateGuide() {
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div>
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center">
-                                        <Tag className="h-6 w-6 text-purple-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center">
+                                        <Tag className="h-6 w-6 text-amber-400" />
                                     </div>
-                                    <h3 className="text-3xl font-bold text-purple-300">🏷️ 标签系统</h3>
+                                    <h3 className="text-3xl font-bold text-amber-300">🏷️ 标签系统</h3>
                                 </div>
                                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
                                     支持嵌套标签，点击可筛选相关笔记
@@ -356,10 +356,10 @@ export default function ObsidianUltimateGuide() {
                             </div>
                             <div className="order-1 md:order-2">
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center">
-                                        <Network className="h-6 w-6 text-purple-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center">
+                                        <Network className="h-6 w-6 text-violet-400" />
                                     </div>
-                                    <h3 className="text-3xl font-bold text-purple-300">🕸️ 关系图谱</h3>
+                                    <h3 className="text-3xl font-bold text-violet-300">🕸️ 关系图谱</h3>
                                 </div>
                                 <p className="text-gray-300 text-lg leading-relaxed">
                                     可视化笔记连接的节点图，节点越大表示被引用次数越多。直观展现知识网络结构。
@@ -371,10 +371,10 @@ export default function ObsidianUltimateGuide() {
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div>
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center">
-                                        <Layout className="h-6 w-6 text-purple-400" />
+                                    <div className="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
+                                        <Layout className="h-6 w-6 text-cyan-400" />
                                     </div>
-                                    <h3 className="text-3xl font-bold text-purple-300">📐 界面布局</h3>
+                                    <h3 className="text-3xl font-bold text-cyan-300">📐 界面布局</h3>
                                 </div>
                                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
                                     灵活的三栏布局，完全可自定义
@@ -480,13 +480,13 @@ export default function ObsidianUltimateGuide() {
                             {plugins.map((plugin, index) => (
                                 <Card
                                     key={index}
-                                    className="bg-[#1E1E2E] border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-600/10"
+                                    className={`bg-[#1E1E2E] border-${plugin.color}-500/20 hover:border-${plugin.color}-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-${plugin.color}-600/10`}
                                 >
                                     <CardHeader>
-                                        <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center mb-3 text-purple-400">
+                                        <div className={`w-12 h-12 rounded-xl bg-${plugin.color}-500/20 flex items-center justify-center mb-3 text-${plugin.color}-400`}>
                                             {plugin.icon}
                                         </div>
-                                        <CardTitle className="text-lg text-purple-300">{plugin.title}</CardTitle>
+                                        <CardTitle className={`text-lg text-${plugin.color}-300`}>{plugin.title}</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <p className="text-sm text-gray-400 leading-relaxed">{plugin.description}</p>
