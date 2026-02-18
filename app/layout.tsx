@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Obsidian 终极使用指南",
   description: "不仅仅是笔记软件，更是随你成长的个人知识库。全面掌握 Obsidian 的核心概念、功能特性和进阶玩法。",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
